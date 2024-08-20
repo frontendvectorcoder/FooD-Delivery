@@ -1,0 +1,61 @@
+.hero_section {
+  position: relative;
+  background: url("../../assets/hero/hero-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 170px;
+  padding-bottom: 90px;
+}
+
+.price_bag {
+  background: url("../../assets/hero/price-badge-yellow.png") no-repeat center
+    center;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  width: 180px;
+  height: 176px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h4_xs {
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+.h3_xs {
+  font-size: 2.275rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero_text h1 {
+  font-family: var(--lilita-font);
+  color: var(--white);
+  font-size: 4rem;
+  margin-bottom: 12px;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.hero_text h3 {
+  font-family: var(--lilita-font);
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--white);
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .hero_text h1 {
+    font-family: var(--lilita-font);
+    font-size: 5rem;
+    margin-bottom: 12px;
+    letter-spacing: 3px;
+    line-height: 1;
+  }
+}
