@@ -50,6 +50,154 @@
   letter-spacing: 3px;
 }
 
+/* SECTION TWO */
+
+.about_section {
+  padding-top: 80px;
+  padding-bottom: 300px;
+  background: url("../../assets/about/about-1.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.about_section h3 {
+  font-size: 3.5rem;
+}
+.about_section p {
+  color: var(--gray);
+  padding: 20px 30px;
+  font-size: 19px;
+}
+
+.about_section_two {
+  background-color: var(--yellow);
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.about_section_two .about_icon img {
+  max-width: 25%;
+}
+
+.about_section_two h3 {
+  font-size: 26px;
+  line-height: 1;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.53434px;
+}
+.about_section_two p {
+  padding: 0 20px;
+}
+
+/* SECTION THREE */
+
+.menu_section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.menu_section .card-image-top {
+  transition: all 500ms ease-in-out;
+}
+
+.menu_section h2 {
+  font-size: 3.5rem;
+  color: var(--light-red);
+}
+.menu_section .para {
+  color: var(--gray);
+  padding: 10px 20px;
+  font-size: 19px;
+}
+.menu_section .rating i {
+  color: var(--yellow);
+  padding-right: 5px;
+}
+.menu_section .wishlist i {
+  color: var(--gray);
+  font-size: 20px;
+  cursor: pointer;
+}
+.menu_section .wishlist i:hover {
+  color: var(--light-red);
+}
+.menu_section .card-title {
+  font-family: var(--oswald-font);
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.menu_section .card-text {
+  color: var(--gray);
+  font-size: 15px;
+}
+.menu_section .price {
+  background-color: var(--bg-coffee);
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 4px;
+}
+.menu_section .price h5 {
+  color: var(--yellow);
+  font-size: 1rem;
+}
+.menu_section .add_to_card {
+  background-color: var(--yellow);
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  padding: 8px 14px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 500ms ease-in-out;
+}
+.menu_section .card:hover .card-image-top {
+  transform: scale(1.1);
+}
+.menu_section .card:hover .add_to_card {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.menu_section .ads_box2 {
+  text-align: right;
+  padding: 80px 35px 50px;
+  border-radius: 6px;
+  background: url("../../assets/menu/ads-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.menu_section .ads_box {
+  text-align: right;
+  padding: 80px 35px 50px;
+  border-radius: 6px;
+  background: url("../../assets/menu/ads-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+.menu_section .add h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--brown);
+}
+.menu_section .add h5 {
+  font-size: 1.375rem;
+  color: var(--brown);
+  margin-top: 8px;
+}
+.menu_section .add a {
+  color: var(--brown);
+  margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+  .about_section h2 {
+    font-size: 2.5rem;
+  }
+  .about_section p {
+    padding: 20px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .hero_text h1 {
     font-family: var(--lilita-font);
