@@ -188,6 +188,14 @@
   color: var(--brown);
   margin-top: 8px;
 }
+.bg_paralax{
+  background:  url("../../assets/parallax/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+}
+
 
 @media (max-width: 992px) {
   .about_section h2 {
@@ -196,7 +204,24 @@
   .about_section p {
     padding: 20px 0;
   }
+
+  .bg_paralax{
+    background-attachment: scroll;
+    height: 500px;
+  }
+  
+
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .hero_text h1 {
