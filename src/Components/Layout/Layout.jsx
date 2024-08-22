@@ -1,4 +1,3 @@
-import React, { Children } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import "../Style/HomeStyleOne.css"
