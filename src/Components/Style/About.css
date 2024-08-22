@@ -26,5 +26,5 @@
 }
 .innerlight.activee {
   opacity: 1;
-  box-shadow: 0 0 10px 10px white;
+  box-shadow: 0 0 10px 5px white;
 }
