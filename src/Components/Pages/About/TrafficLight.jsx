@@ -33,8 +33,6 @@ function TrafficLight() {
         return () => clearInterval(time);
     }, [red, start])
 
-
-
     return (
         <>
             <section>

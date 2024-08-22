@@ -2,7 +2,8 @@
   width: 300px;
   height: 400px;
   background-color: black;
-  margin: auto;display: flex;
+  margin: auto;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
