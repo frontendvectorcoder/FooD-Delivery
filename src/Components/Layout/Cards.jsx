@@ -14,7 +14,7 @@ function Cards({ image, title, paragraph, rating, price , pricerating }) {
                         <div className=" d-flex align-items-center justify-content-between">
                             <div className="rating">Rating: {pricerating(rating)}</div>
                             <div className="wishlist">
-                                <i class="bi bi-bag-heart-fill"></i>
+                                <i className="bi bi-bag-heart-fill"></i>
                             </div>
                         </div>
                         <Card.Title>{title}</Card.Title>
@@ -25,7 +25,7 @@ function Cards({ image, title, paragraph, rating, price , pricerating }) {
                             </div>
                             <div className="add_to_card">
                                 <Link to="/">
-                                    <i class="bi bi-bag-heart-fill me-2"></i>
+                                    <i className="bi bi-bag-heart-fill me-2"></i>
                                     Add To Card
                                 </Link>
                             </div>

@@ -185,7 +185,8 @@
   margin-top: 8px;
 }
 .menu_section .add a {
-  color: var(--brown);
+  color: var(--white);
+
   margin-top: 8px;
 }
 .bg_paralax {
@@ -232,15 +233,113 @@
   height: auto;
 }
 
-.carousel.slide .carousel-inner{
+.carousel.slide .carousel-inner {
   overflow: unset;
 }
-.carousel.slide .carousel-inner .carousel-caption{
+.carousel.slide .carousel-inner .carousel-caption {
   position: relative;
   right: unset;
   left: unset;
 }
 
+/* SIX */
+
+.review_people {
+  padding: 70px 0 40px;
+  background: url("../../assets/blog/reviews.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.review_people .brand_img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 25px;
+}
+.review_people .carousel.slide .carousel-inner .carousel-caption p {
+  font-size: 1.27rem;
+  line-height: 1.45;
+  font-weight: 700;
+  padding: 0 12%;
+  margin-bottom: 25px;
+}
+.review_people
+  .carousel.slide
+  .carousel-inner
+  .carousel-caption
+  .item_rating
+  i {
+  color: var(--yellow);
+  margin-right: 5px;
+}
+.review_people .carousel.slide .carousel-inner .carousel-caption h5 {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* SEVEN */
+
+.contect_section {
+  background: url("../../assets//footer/banner-1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contect_section h4 {
+  font-size: 2.375rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.contect_section h2 {
+  font-size: 3.5rem;
+  margin-top: 25px;
+}
+.contect_section p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+/* FOOTER */
+
+footer {
+  color: var(--light-black);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+footer h5 {
+  padding-top: 80px;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+footer .calling {
+  color: var(--yellow);
+  font-size: 1.52rem;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .contect_section p {
+    width: 100%;
+  }
+  .contect_section h2 {
+    font-size: 2.5rem;
+  }
+}
 
 @media (max-width: 992px) {
   .about_section h2 {
