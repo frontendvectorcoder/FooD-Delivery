@@ -35,7 +35,7 @@ function TrafficLight() {
 
     return (
         <>
-            <section>
+            <section className=' pb-5' style={{ backgroundColor: '#111b22' }}>
                 <Container>
                     <Row className=' justify-content-center align-items-center d-flex pt-5'>
                         <Col xs={{ span: 4 }} className='pt-5'>

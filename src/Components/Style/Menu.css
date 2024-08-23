@@ -1,0 +1,30 @@
+.bord .box {
+  height: 80px;
+  width: 80px;
+  margin: 5px;
+  background-color: brown;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+}
+.BOXCOLOR {
+  background: black;
+  padding: 12px;
+}
+.BOXCOLOR h1 {
+  color: white;
+}
+.row1,
+.row2,
+.row3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
