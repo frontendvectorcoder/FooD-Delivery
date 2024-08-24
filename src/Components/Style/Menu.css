@@ -13,9 +13,18 @@
     width: 100%;
   }
 }
+.bord{
+  margin: auto;
+}
 .BOXCOLOR {
   background: black;
-  padding: 12px;
+  padding: 40px;
+
+  @media (max-width: 1200px) {
+    .bord {
+      width: 350px;
+    }
+  }
 }
 .BOXCOLOR h1 {
   color: white;
