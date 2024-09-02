@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
-
 const countries = [
     {
         name: "Select",
@@ -24,29 +23,24 @@ const countries = [
         cities: ["Dhaka", "Chittagong"],
     },
 ];
-
 function ShopDown() {
-
     let [disabled, setdisabled] = useState(true)
     let [selectedCountry, setSelectedCountry] = useState([]);
-
     let changevalue = (check) => {
-        console.log(check)
-
+        // chek kar rhy hy ky is ma value match karti ha ya ni Find Loop chala kar ager mil gai to us puri array ko la aya ga
         let ismatch = countries.find(item => item.value == check)
-        // console.log(ismatch , "match ho gaya")
+        // ager match ho jy pher check kary k us ma cities be hy k ni
         if (ismatch && ismatch.cities) {
             setdisabled(false)
+            // ager ha to is ko new array ma send kar dy
             setSelectedCountry(ismatch.cities)
         }
         else {
             setdisabled(true)
+            // ager ni ha to aary kokhali kar do
             setSelectedCountry([])
         }
     }
-
-
-
     return (
         <section className=" pb-5" style={{ backgroundColor: "#111b22" }}>
             <Container>
@@ -79,20 +73,16 @@ function ShopDown() {
         </section>
     );
 }
-
 export default ShopDown;
 
 
 
 // const [disable, setdisable] = useState(true);
 // const [second, setsecond] = useState();
-
 // let Selectedcity = (choice) => {
 //     console.log(choice)
-
 //     let ismatch = countries.find(item => item.value === choice)
 //     console.log("first ", ismatch)
-
 //     if (ismatch && ismatch.cities) {
 //         setsecond(ismatch.cities)
 //         setdisable(false)
@@ -100,9 +90,6 @@ export default ShopDown;
 //         setsecond([]);
 //         setdisable(true)
 //     }
-
-
-
 //     // if (choice) {
 //     //   let newvalue = countries.map((item) => item);
 //     //   console.log(newvalue);
@@ -115,11 +102,6 @@ export default ShopDown;
 //     //     }
 //     // }
 // };
-
-
-
-
-
 // <Col lg={{ span: 4 }} className="pt-5">
 //                         <Form.Select
 //                             onChange={(choice) => Selectedcity(choice.target.value)}
