@@ -9,7 +9,12 @@ function Searchbar() {
 
   let findsearch = (e) => {
     console.log(e.target.value);
+    setsearchvalue(e.target.value);
   };
+
+  let checkkey = list.filter((item) => {
+    return item.toLowerCase().includes(searchvalue.toLowerCase());
+  });
 
   return (
     <>
@@ -19,9 +24,11 @@ function Searchbar() {
             <Col lg={{ span: 12 }} className="pt-5">
               <input type="text" value={searchvalue} onChange={findsearch} />
               <ul>
-                {list.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+                {
+                  checkkey.map((item , key)=>(
+                    <li key={key} >{item}</li>
+                  ))
+                }
               </ul>
             </Col>
           </Row>
