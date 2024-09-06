@@ -1,0 +1,20 @@
+.switch {
+  /* background-color: rgb(17, 27, 34); */
+
+  button {
+    padding: 10px;
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+  }
+
+
+}
+body{
+    &.dark {
+        background-color: rgb(17, 27, 34);
+      }
+      &.light {
+        background-color: white;
+      }
+}
