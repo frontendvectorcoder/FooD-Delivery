@@ -6,6 +6,7 @@ import OurMenu from './Components/Pages/OurMenu/OurMenu'
 import Shop from './Components/Pages/Shop/Shop'
 import Blog from './Components/Pages/Blog/Blog'
 import Contect from './Components/Pages/Contect/Contect'
+import { Dark } from './Components/Pages/Dark/Dark'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/shop' element={<Shop />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/contect' element={<Contect />} />
+          <Route path='/dark' element={<Dark />} />
         </Routes>
       </Router>
     </>

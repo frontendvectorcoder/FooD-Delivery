@@ -5,7 +5,15 @@ import { Container, Row, Col } from "react-bootstrap";
 function Searchbar() {
   let [searchvalue, setsearchvalue] = useState("");
 
-  let list = useMemo(() => ["Apple", "Banana", "Orange", "Date"], []);
+  let list = useMemo(() => [
+    "Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Hannah",
+    "Isaac", "Jack", "Kathy", "Liam", "Mia", "Nina", "Oscar", "Paul",
+    "Quinn", "Rita", "Steve", "Tina", "Uma", "Vince", "Wendy", "Xander",
+    "Yara", "Zane", "Aaron", "Bianca", "Carl", "Daisy", "Elijah", "Fiona",
+    "Gabe", "Helena", "Ian", "Jill", "Kyle", "Lara", "Mike", "Nora",
+    "Oliver", "Pete", "Quincy", "Rose", "Sam", "Tara", "Ulysses", "Val",
+    "Will", "Zara"
+  ], []);
 
   let findsearch = (e) => {
     console.log(e.target.value);
@@ -22,10 +30,10 @@ function Searchbar() {
         <Container>
           <Row className=" justify-content-center align-items-center d-flex pt-5 pb-5 text-white">
             <Col lg={{ span: 12 }} className="pt-5">
-              <input type="text" value={searchvalue} onChange={findsearch} />
+              <input type="text" className="p-1" value={searchvalue} placeholder="Enter Fruit name" onChange={findsearch} />
               <ul>
                 {
-                  checkkey.map((item , key)=>(
+                  checkkey.map((item, key) => (
                     <li key={key} >{item}</li>
                   ))
                 }

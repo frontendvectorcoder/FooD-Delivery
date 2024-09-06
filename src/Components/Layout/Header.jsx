@@ -37,6 +37,7 @@ function Header() {
               <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/contect">Contect</Nav.Link>
+              <Nav.Link as={Link} to="/dark">Dark</Nav.Link>
               <Nav.Link as={Link} to="/w">
                 <div className="cart">
                   <i className="bi bi-bag fs-5"></i>
