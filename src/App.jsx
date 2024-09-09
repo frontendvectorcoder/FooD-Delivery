@@ -6,7 +6,7 @@ import OurMenu from './Components/Pages/OurMenu/OurMenu'
 import Shop from './Components/Pages/Shop/Shop'
 import Blog from './Components/Pages/Blog/Blog'
 import Contect from './Components/Pages/Contect/Contect'
-import { Dark } from './Components/Pages/Dark/Dark'
+import Dark from './Components/Pages/Dark/Dark'
 
 function App() {
 

@@ -1,34 +1,24 @@
 import React, { createContext, useEffect, useState } from 'react'
 
-const themesapply = createContext()
+export const Themesapply = createContext()
 
 export const ContentApi = ({ children }) => {
+    const [checklocal, setchecklocal] = useState('light')
 
-    let [checklocal, setchecklocal] = useState('light')
-
-
-    useEffect(() => {
-
-        const theme = localStorage.getItem('theme')
-
-        if (theme) {
-            setchecklocal(theme)
-        }
-
-
-    }, [])
-
-    let themetoggle = () => {
-        let newtheme = checklocal === 'light' ? 'dark' : 'light';
-        localStorage.setItem(newtheme)
+    const theme = localStorage.getItem('theme')
+    if (theme) {
+        setchecklocal(theme)
     }
 
-
-
+    const themetoggle = () => {
+        let newtheme = checklocal === 'light' ? 'dark' : 'light';
+        localStorage.setItem('theme', newtheme) // Corrected here
+        setchecklocal(newtheme)
+    }
 
     return (
-        <themesapply.Provider>
+        <Themesapply.Provider value={{ checklocal , themetoggle }}>
             {children}
-        </themesapply.Provider>
+        </Themesapply.Provider>
     )
 }
