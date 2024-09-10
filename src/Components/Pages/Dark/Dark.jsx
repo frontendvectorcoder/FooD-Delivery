@@ -21,7 +21,7 @@ function Dark() {
                         <Col lg={{ span: 12 }} className="pt-5">
                             <div className="pt-5">
                                 <div>
-                                    <h1>React Theme Switcher Color</h1>
+                                    <h1>React Theme Switcher Color Refresh</h1>
                                     <button onClick={themeToggle}>
                                         Switch to {checklocal === 'light' ? 'Light' : 'Dark'}
                                     </button>

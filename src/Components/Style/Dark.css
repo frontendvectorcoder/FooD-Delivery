@@ -1,5 +1,4 @@
 .switch {
-
   button {
     padding: 10px;
     background-color: red;
@@ -10,8 +9,15 @@
 .switch {
   &.dark {
     background-color: rgb(17, 27, 34);
+
+    h1 {
+      color: white;
+    }
   }
   &.light {
     background-color: white;
+    h1 {
+      color: black;
+    }
   }
 }
