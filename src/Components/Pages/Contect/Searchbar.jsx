@@ -17,7 +17,7 @@ function Searchbar() {
 
   let findsearch = (e) => {
     console.log(e.target.value);
-    setsearchvalue(e.target.value);
+    setsearchvalue(e.target.value.trim());
   };
 
   let checkkey = list.filter((item) => {
