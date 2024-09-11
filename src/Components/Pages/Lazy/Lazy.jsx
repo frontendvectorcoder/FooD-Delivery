@@ -41,7 +41,7 @@ function LazyComponent() {
 export default LazyComponent;
 
 
-
+// nichy wala LIFE CYCLE USED kiya ha
 
 
 // import React, { useState, useEffect } from "react";
