@@ -39,3 +39,45 @@ function LazyComponent() {
 }
 
 export default LazyComponent;
+
+
+
+
+
+// import React, { useState, useEffect } from "react";
+
+// function Home() {
+//   const [data, setData] = useState([]);
+//   const [render, setrender] = useState(false);
+
+//   useEffect(() => {
+//     console.log("first");
+//     // This code runs when the component is mounted (initial load)
+//     fetch("https://jsonplaceholder.typicode.com/posts/") // Replace with your API endpoint
+//       .then((response) => response.json())
+//       .then((result) => {
+//         setData(result); 
+//       })
+//       .catch((error) => {
+//         console.error("Error fetching data:", error);
+//       });
+
+//       return () =>{
+//         console.log("Unmonted")
+//       }
+//   }, [render]); // Empty dependency array ensures this effect runs only once on mount
+
+//   return (
+//     <div>
+//       <button onClick={() => setrender(!render)}>Toggle</button>
+//       <h1>Data from API:</h1>
+//       {data.length > 0 ? (
+//         data.map((item) => <p key={item.id}>{item.title}</p>)
+//       ) : (
+//         <p>No data available.</p>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default Home;
