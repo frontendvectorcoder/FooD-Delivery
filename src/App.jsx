@@ -9,6 +9,7 @@ import Contect from './Components/Pages/Contect/Contect'
 import Dark from './Components/Pages/Dark/Dark'
 import AddRemove from './Components/Pages/AddRemove/AddRemove'
 import LazyComponent from './Components/Pages/Lazy/Lazy'
+import HOC from './Components/Pages/HOC/HOC'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/dark' element={<Dark />} />
           <Route path='/add' element={<AddRemove />} />
           <Route path='/lazy' element={<LazyComponent />} />
+          <Route path='/hoc' element={<HOC />} />
         </Routes>
       </Router>
     </>
